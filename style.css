@@ -2,9 +2,29 @@
 
 @import url('Fonte/namaku/Namaku.otf');
 
+@import url('Fonte/roboto/Roboto-Bold.ttf');
+
+@import url('Fonte/amperzand/Amperzand.ttf');
+
 @font-face {
     font-family: 'Principal';
     src: url('Fonte/namaku/Namaku.otf');
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('Fonte/roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Conteudo';
+    src: url('Fonte/amperzand/Amperzand.ttf');
+}
+
+:root {
+    --fonte1: 'Principal';
+    --fonte2: 'Titulo';
+    --fonte3: 'Conteudo';
 }
 
 * {
@@ -24,7 +44,7 @@ header {
 }
 header > h1 {
     padding-top: 50px;
-    font-family: 'Principal';
+    font-family: var(--fonte1);
     font-variant: small-caps;
 }
 
@@ -47,6 +67,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2em;
 }
 
 .normal {
