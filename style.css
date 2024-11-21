@@ -4,7 +4,7 @@
 
 @import url('Fonte/roboto/Roboto-Bold.ttf');
 
-@import url('Fonte/birds_of_paradise/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf');
+@import url('Fonte/edensor/Edensor-FREE.otf');
 
 @font-face {
     font-family: 'Principal';
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'Conteudo';
-    src: url('Fonte/birds_of_paradise/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf');
+    src: url('Fonte/edensor/Edensor-FREE.otf');
 }
 
 :root {
@@ -71,6 +71,10 @@ a:hover {
     text-decoration: underline;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -78,6 +82,7 @@ section {
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 1em;
+    font-weight: bold;
 }
 
 @media (min-width: 600px) {
