@@ -4,7 +4,7 @@
 
 @import url('Fonte/roboto/Roboto-Bold.ttf');
 
-@import url('Fonte/amperzand/Amperzand.ttf');
+@import url('Fonte/birds_of_paradise/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf');
 
 @font-face {
     font-family: 'Principal';
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'Conteudo';
-    src: url('Fonte/amperzand/Amperzand.ttf');
+    src: url('Fonte/birds_of_paradise/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf');
 }
 
 :root {
@@ -30,6 +30,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 html, body {
@@ -44,9 +45,17 @@ header {
 }
 header > h1 {
     padding-top: 50px;
-    font-family: var(--fonte1);
     font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 2em;
 }
+
+@media (min-width: 600px) {
+    header > h1 {
+        font-size: 4em;
+    }
+}
+
 
 header > p {
     padding-bottom: 50px;
@@ -68,7 +77,13 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 2em;
+    font-size: 1em;
+}
+
+@media (min-width: 600px) {
+    section {
+        font-size: 2em;
+    }
 }
 
 .normal {
@@ -82,7 +97,8 @@ section {
 }
 
 .imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.212);
 }
 
